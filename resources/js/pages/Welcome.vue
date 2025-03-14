@@ -34,7 +34,7 @@ const submitForm = () => {
 };
 
 const siteUrl = computed(() => window.location.href);
-const ogImage = computed(() => `${window.location.origin}/img/COLINM.jpg`);
+const ogImage = computed(() => `${window.location.origin}/img/COLINM-t.jpg`);
 const ogTitle = "JCM Fitness";
 const ogDescription = "Personalized training programs tailored just for you. Get started with JCM Fitness today!";
 
