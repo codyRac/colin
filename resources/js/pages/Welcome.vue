@@ -102,7 +102,7 @@ const ogDescription = "Personalized training programs tailored just for you. Get
         <main class="w-full">
             <!-- Full-width title section -->
             <div  class="w-full md:text-left text-center text-custom-light text-3xl p-10 animate-slide-in-lr">
-               Collin McCalla
+               Colin McCalla
                <div class="text-custom-blue text-xl">
                    Personal Trainer
                </div>
