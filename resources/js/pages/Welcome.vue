@@ -33,31 +33,37 @@ const submitForm = () => {
     });
 };
 
+const siteUrl = computed(() => window.location.href);
+const ogImage = "https://personalluerra.sfo3.digitaloceanspaces.com/Colin/Img/COLINM206.jpg";
+const ogTitle = "JCM Fitness";
+const ogDescription = "Personalized training programs tailored just for you. Get started with JCM Fitness today!";
 
 
 </script>
 
 <template>
-<Head title="JCM Fitness">
-    <meta property="og:title" content="JCM Fitness" />
-    <meta property="og:description" content="Personalized training programs tailored just for you. Get started with JCM Fitness today!" />
-    <meta property="og:image" content="https://personalluerra.sfo3.digitaloceanspaces.com/Colin/Img/COLINM206.jpg" />
-    <meta property="og:url" content="https://yourwebsite.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="JCM Fitness" />
+    <Head :title="ogTitle">
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" :content="ogTitle" />
+        <meta property="og:description" :content="ogDescription" />
+        <meta property="og:image" :content="ogImage" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:url" :content="siteUrl" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="JCM Fitness" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="JCM Fitness" />
-    <meta name="twitter:description" content="Personalized training programs tailored just for you. Get started with JCM Fitness today!" />
-    <meta name="twitter:image" content="https://personalluerra.sfo3.digitaloceanspaces.com/Colin/Img/COLINM206.jpg" />
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" :content="ogTitle" />
+        <meta name="twitter:description" :content="ogDescription" />
+        <meta name="twitter:image" :content="ogImage" />
 
-    <link rel="preconnect" href="https://rsms.me/" />
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-</Head>
-    <Head title="Welcome">
+        <!-- Preconnect for Fonts -->
         <link rel="preconnect" href="https://rsms.me/" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     </Head>
+
     <div class="w-full min-h-screen bg-cover bg-no-repeat" style="background-image: url('https://personalluerra.sfo3.digitaloceanspaces.com/Colin/Img/COLINM206.jpg');">
         <header class="not-has-[nav]:hidden mb-6 w-full  text-sm ">
             <nav class="flex p-3 justify-end gap-4">
