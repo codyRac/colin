@@ -161,6 +161,14 @@ const submitForm = () => {
         </div>
     </div>
 
+    <div class="w-full min-h-screen bg-cover flex items-center justify-center text-center"
+        style="background-image: url('https://personalluerra.sfo3.digitaloceanspaces.com/Colin/Img/COLINM242.jpg');">
+
+        <div class="text-5xl md:text-8xl text-custom-main p-10">
+            {{ contentMap.first_headline }}
+        </div>
+    </div>
+
     <div class="md:p-10 my-10" id="about">
         <div class="container mx-auto">
             <div class="text-5xl md:text-8xl text-center ">
