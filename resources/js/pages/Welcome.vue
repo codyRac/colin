@@ -34,7 +34,7 @@ const submitForm = () => {
 };
 
 const siteUrl = computed(() => window.location.href);
-const ogImage = "https://personalluerra.sfo3.digitaloceanspaces.com/Colin/Img/COLINM206.jpg";
+const ogImage = "/img/COLINM.jpg";
 const ogTitle = "JCM Fitness";
 const ogDescription = "Personalized training programs tailored just for you. Get started with JCM Fitness today!";
 
@@ -63,7 +63,6 @@ const ogDescription = "Personalized training programs tailored just for you. Get
         <link rel="preconnect" href="https://rsms.me/" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     </Head>
-
     <div class="w-full min-h-screen bg-cover bg-no-repeat" style="background-image: url('https://personalluerra.sfo3.digitaloceanspaces.com/Colin/Img/COLINM206.jpg');">
         <header class="not-has-[nav]:hidden mb-6 w-full  text-sm ">
             <nav class="flex p-3 justify-end gap-4">
