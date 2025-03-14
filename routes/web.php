@@ -2,10 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\{WelcomeController,ContactController};
 
-Route::get('/', function () {
-    return Inertia::render('Welcome');
-})->name('home');
+Route::get('/', [WelcomeController::class, 'index'])->name('home');
+
+Route::post('/contact', [ContactController::class, 'send']);
 
 Route::get('dashboard', function () {
     return Inertia::render('Dashboard');

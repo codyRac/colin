@@ -11,6 +11,32 @@ export default {
     ],
     theme: {
         extend: {
+            keyframes: {
+                slideInLr: {
+                    '0%': { transform: 'translateX(-100%)' },
+                    '100%': { transform: 'translateX(0)' },
+                },
+                slideInRl: {
+                    '0%': { transform: 'translateX(100%)' },
+                    '100%': { transform: 'translateX(0)' },
+                },
+                slideInUp: {
+                    '0%': { transform: 'translateY(100%)' },
+                    '100%': { transform: 'translateY(0)' },
+                },
+                slideInDown: {
+                    '0%': { transform: 'translateY(-100%)' },
+                    '100%': { transform: 'translateY(0)' },
+                },
+            },
+            animation: {
+                    'slide-in-lr': 'slideInLr 1s ease-in-out',
+                    'slide-in-rl': 'slideInRl 1s ease-in-out',
+                    'slide-in-up': 'slideInUp 1s ease-in-out',
+                    'slide-in-down': 'slideInDown 1s ease-in-out',
+
+                },
+
             fontFamily: {
                 sans: ['Instrument Sans', ...defaultTheme.fontFamily.sans],
             },
@@ -22,6 +48,12 @@ export default {
             colors: {
                 background: 'hsl(var(--background))',
                 foreground: 'hsl(var(--foreground))',
+                custom: {
+                    'main': '#a4a335', // Custom color
+                    'blue': 'oklch(0.488 0.243 264.376)', // Custom OKLCH Color
+                    'light': 'oklch(0.977 0.013 236.62)', // Text Color
+                    'accent': 'oklch(0.905 0.182 98.111)', // Accent Color
+                },
                 card: {
                     DEFAULT: 'hsl(var(--card))',
                     foreground: 'hsl(var(--card-foreground))',
