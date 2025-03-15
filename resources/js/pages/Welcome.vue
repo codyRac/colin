@@ -44,7 +44,7 @@ const ogDescription = "Personalized training programs tailored just for you. Get
 <template>
     <Head :title="ogTitle">
         <!-- Open Graph Meta Tags -->
-        
+
 
         <!-- Preconnect for Fonts -->
         <link rel="preconnect" href="https://rsms.me/" />
@@ -194,11 +194,11 @@ const ogDescription = "Personalized training programs tailored just for you. Get
             </div>
             <div class="md:w-1/2 mx-auto px-3">
             <ul class="list-disc text-2xl">
-                <li>Weekly workout plans designed specifically for your goals and accessibility—whether you want to transform your body in the gym or just feel more active with at-home workouts.</li>
-                <li>One-on-one virtual guided workout sessions (in-person available if local to Los Angeles).</li>
-                <li>Consistent accountability check-ins.</li>
-                <li>Holistic coaching: Weekly calls to discuss nutrition and encourage daily practices to help you achieve your goals quicker and take ownership of your health.</li>
-                <li>TBC.</li>
+                <li>{{ contentMap.service_1 }}</li>
+                <li>{{ contentMap.service_2 }}</li>
+                <li>{{ contentMap.service_3 }}</li>
+                <li>{{ contentMap.service_4 }}</li>
+                <li>{{ contentMap.service_5 }}</li>
             </ul>
 
 
