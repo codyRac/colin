@@ -10,7 +10,7 @@
         <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
         <meta property="og:title" content="{{ config('app.name', 'JCM Fitness') }}" />
         <meta property="og:description" content="Personalized training programs tailored just for you. Get started with JCM Fitness today!" />
-        <meta property="og:image" content="https://jcmfitness.com/img/COLINM-t.jpg" />
+        <meta property="og:image" content="https://personalluerra.sfo3.digitaloceanspaces.com/Colin/Img/COLINM-t.jpeg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:url" content="https://jcmfitness.com" />
@@ -21,7 +21,7 @@
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="{{ config('app.name', 'JCM Fitness') }}" />
         <meta name="twitter:description"  content="Personalized training programs tailored just for you. Get started with JCM Fitness today!" />
-        <meta name="twitter:image" content="https://jcmfitness.com/img/COLINM-t.jpg" />
+        <meta name="twitter:image" content="https://personalluerra.sfo3.digitaloceanspaces.com/Colin/Img/COLINM-t.jpeg" />
 
         @routes
         @vite(['resources/js/app.ts'])
