@@ -44,20 +44,7 @@ const ogDescription = "Personalized training programs tailored just for you. Get
 <template>
     <Head :title="ogTitle">
         <!-- Open Graph Meta Tags -->
-        <meta property="og:title" :content="ogTitle" />
-        <meta property="og:description" :content="ogDescription" />
-        <meta property="og:image" :content="ogImage" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:url" :content="siteUrl" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="JCM Fitness" />
-
-        <!-- Twitter Meta Tags -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" :content="ogTitle" />
-        <meta name="twitter:description" :content="ogDescription" />
-        <meta name="twitter:image" :content="ogImage" />
+        
 
         <!-- Preconnect for Fonts -->
         <link rel="preconnect" href="https://rsms.me/" />
