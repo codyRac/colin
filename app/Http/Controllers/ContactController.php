@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Spatie\Permission\Models\Role;
-use App\Models\User;
+use App\Models\{User, Contact};
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\InterestFormMail;
@@ -17,6 +17,9 @@ class ContactController extends Controller
             'email' => 'required|email',
             'phone' => 'required|string|max:20',
         ]);
+
+        Contact::create($validated);
+
 
         // Get all admin users
         $admins = User::role('admin')->pluck('email');
